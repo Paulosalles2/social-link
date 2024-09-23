@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'inter';
+    src: url('../fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'inter';
+    margin: 0;
+    min-height: 100vh; 
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+
+.content-box {
+    background-color: hsl(0, 0%, 12%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 300px;
+    margin-top: 40px;
+}
+
+.content-box img {
+    width: auto; 
+    height: 100px;
+    border-radius: 50px;
+}
+
+.content-box h1 {
+    color: white;
+} 
+
+.content-box h5 {
+    color: hsl(75, 94%, 57%);
+} 
+
+.content-box p {
+    color: hsl(0, 0%, 84%);
+}
+
+/* Estilo dos botões */
+button {
+    width: 90%;
+    padding: 14px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3c3c3c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(75, 94%, 57%);
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: hsl(0, 0%, 12%);
+    color: white;
+    position: relative;
+    bottom: 0px;
+    margin-top: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+    .content-box {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 12px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .content-box {
+        padding: 12px;
+        margin-top: 10px;
+    }
+
+    button {
+        width: 80%;
+        padding: 8px;
+        margin-top: 10px;
+    }
+
+    .content-box img {
+        height: 80px; 
+    }
+
+    .content-box p {
+        color: hsl(0, 0%, 84%);
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .content-box {
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    button {
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    .content-box img {
+        height: 70px;
+    }
+
+    .content-box h1 {
+        font-size: 1.2em; /
+    }
+
+    .content-box h5 {
+        font-size: 0.9em; /
+    }
+
+    .content-box p {
+        font-size: 0.8em; 
+    }
+}
